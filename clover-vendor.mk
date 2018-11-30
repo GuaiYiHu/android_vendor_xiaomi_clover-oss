@@ -16,18 +16,14 @@
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/xiaomi/clover/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/xiaomi/clover/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/xiaomi/clover/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/xiaomi/clover/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/xiaomi/clover/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/xiaomi/clover/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/xiaomi/clover/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
-    vendor/xiaomi/clover/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
     vendor/xiaomi/clover/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/clover/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/xiaomi/clover/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
-    vendor/xiaomi/clover/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/xiaomi/clover/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/xiaomi/clover/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/xiaomi/clover/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
@@ -38,8 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/clover/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/clover/proprietary/vendor/etc/permissions/vendor-qti-hardware-alarm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-alarm.xml \
-    vendor/xiaomi/clover/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
-    vendor/xiaomi/clover/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/xiaomi/clover/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/clover/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/clover/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -52,15 +46,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/xiaomi/clover/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/xiaomi/clover/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/xiaomi/clover/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
-    vendor/xiaomi/clover/proprietary/lib/libExtendedExtractor.so:system/lib/libExtendedExtractor.so \
-    vendor/xiaomi/clover/proprietary/lib/libFidoCryptoJNI.so:system/lib/libFidoCryptoJNI.so \
-    vendor/xiaomi/clover/proprietary/lib/libFidoCrypto_system.so:system/lib/libFidoCrypto_system.so \
-    vendor/xiaomi/clover/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/xiaomi/clover/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
     vendor/xiaomi/clover/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
     vendor/xiaomi/clover/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
@@ -69,12 +58,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
     vendor/xiaomi/clover/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
     vendor/xiaomi/clover/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
-    vendor/xiaomi/clover/proprietary/lib/libhbtpjni.so:system/lib/libhbtpjni.so \
     vendor/xiaomi/clover/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/xiaomi/clover/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/xiaomi/clover/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/xiaomi/clover/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/xiaomi/clover/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
     vendor/xiaomi/clover/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
     vendor/xiaomi/clover/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
     vendor/xiaomi/clover/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
@@ -82,33 +68,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/lib/librcc.so:system/lib/librcc.so \
     vendor/xiaomi/clover/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
     vendor/xiaomi/clover/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
-    vendor/xiaomi/clover/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
+    vendor/xiaomi/clover/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/xiaomi/clover/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdcommonutils.so:system/lib/libwfdcommonutils.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdconfigutils.so:system/lib/libwfdconfigutils.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdmminterface.so:system/lib/libwfdmminterface.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdmmsink.so:system/lib/libwfdmmsink.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdmmsrc.so:system/lib/libwfdmmsrc.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdnative.so:system/lib/libwfdnative.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdrtsp.so:system/lib/libwfdrtsp.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdservice.so:system/lib/libwfdservice.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfdsm.so:system/lib/libwfdsm.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfduibcinterface.so:system/lib/libwfduibcinterface.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfduibcsink.so:system/lib/libwfduibcsink.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfduibcsinkinterface.so:system/lib/libwfduibcsinkinterface.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfduibcsrc.so:system/lib/libwfduibcsrc.so \
-    vendor/xiaomi/clover/proprietary/lib/libwfduibcsrcinterface.so:system/lib/libwfduibcsrcinterface.so \
     vendor/xiaomi/clover/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.data.latency@1.0.so:system/lib/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so:system/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.iop@2.0.so:system/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/xiaomi/clover/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
@@ -120,16 +87,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/xiaomi/clover/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/clover/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
     vendor/xiaomi/clover/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/clover/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
-    vendor/xiaomi/clover/proprietary/lib64/libExtendedExtractor.so:system/lib64/libExtendedExtractor.so \
-    vendor/xiaomi/clover/proprietary/lib64/libFidoCryptoJNI.so:system/lib64/libFidoCryptoJNI.so \
-    vendor/xiaomi/clover/proprietary/lib64/libFidoCrypto_system.so:system/lib64/libFidoCrypto_system.so \
-    vendor/xiaomi/clover/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/xiaomi/clover/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
     vendor/xiaomi/clover/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
     vendor/xiaomi/clover/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
@@ -140,12 +102,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
     vendor/xiaomi/clover/proprietary/lib64/libdpmnsrm.so:system/lib64/libdpmnsrm.so \
     vendor/xiaomi/clover/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
-    vendor/xiaomi/clover/proprietary/lib64/libhbtpjni.so:system/lib64/libhbtpjni.so \
     vendor/xiaomi/clover/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/clover/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/xiaomi/clover/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
-    vendor/xiaomi/clover/proprietary/lib64/libmmparser.so:system/lib64/libmmparser.so \
-    vendor/xiaomi/clover/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
     vendor/xiaomi/clover/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
     vendor/xiaomi/clover/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
     vendor/xiaomi/clover/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
@@ -153,33 +112,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/xiaomi/clover/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
     vendor/xiaomi/clover/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
-    vendor/xiaomi/clover/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
     vendor/xiaomi/clover/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdavenhancements.so:system/lib64/libwfdavenhancements.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdcodecv4l2.so:system/lib64/libwfdcodecv4l2.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdcommonutils.so:system/lib64/libwfdcommonutils.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdconfigutils.so:system/lib64/libwfdconfigutils.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdmminterface.so:system/lib64/libwfdmminterface.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdmmsink.so:system/lib64/libwfdmmsink.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdmmsrc.so:system/lib64/libwfdmmsrc.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdnative.so:system/lib64/libwfdnative.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdrtsp.so:system/lib64/libwfdrtsp.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdservice.so:system/lib64/libwfdservice.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfdsm.so:system/lib64/libwfdsm.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfduibcinterface.so:system/lib64/libwfduibcinterface.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfduibcsink.so:system/lib64/libwfduibcsink.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfduibcsinkinterface.so:system/lib64/libwfduibcsinkinterface.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfduibcsrc.so:system/lib64/libwfduibcsrc.so \
-    vendor/xiaomi/clover/proprietary/lib64/libwfduibcsrcinterface.so:system/lib64/libwfduibcsrcinterface.so \
     vendor/xiaomi/clover/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.data.latency@1.0.so:system/lib64/vendor.qti.hardware.data.latency@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0.so \
-    vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:system/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.iop@2.0.so:system/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/xiaomi/clover/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
@@ -191,26 +130,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/DR_AP_Service:$(TARGET_COPY_OUT_VENDOR)/bin/DR_AP_Service \
     vendor/xiaomi/clover/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
-    vendor/xiaomi/clover/proprietary/vendor/bin/audioflacapp:$(TARGET_COPY_OUT_VENDOR)/bin/audioflacapp \
     vendor/xiaomi/clover/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/xiaomi/clover/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/clover/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
-    vendor/xiaomi/clover/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
-    vendor/xiaomi/clover/proprietary/vendor/bin/diag_callback_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_callback_sample \
-    vendor/xiaomi/clover/proprietary/vendor/bin/diag_dci_sample:$(TARGET_COPY_OUT_VENDOR)/bin/diag_dci_sample \
-    vendor/xiaomi/clover/proprietary/vendor/bin/diag_klog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_klog \
-    vendor/xiaomi/clover/proprietary/vendor/bin/diag_mdlog:$(TARGET_COPY_OUT_VENDOR)/bin/diag_mdlog \
-    vendor/xiaomi/clover/proprietary/vendor/bin/diag_socket_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_socket_log \
-    vendor/xiaomi/clover/proprietary/vendor/bin/diag_uart_log:$(TARGET_COPY_OUT_VENDOR)/bin/diag_uart_log \
     vendor/xiaomi/clover/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/clover/proprietary/vendor/bin/energy-awareness:$(TARGET_COPY_OUT_VENDOR)/bin/energy-awareness \
-    vendor/xiaomi/clover/proprietary/vendor/bin/fstman:$(TARGET_COPY_OUT_VENDOR)/bin/fstman \
     vendor/xiaomi/clover/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
-    vendor/xiaomi/clover/proprietary/vendor/bin/hal_proxy_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hal_proxy_daemon \
-    vendor/xiaomi/clover/proprietary/vendor/bin/hbtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hbtp_daemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
-    vendor/xiaomi/clover/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
-    vendor/xiaomi/clover/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/xiaomi/clover/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/xiaomi/clover/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/xiaomi/clover/proprietary/vendor/bin/hw/android.hardware.drm@1.0-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.0-service.widevine \
@@ -228,7 +154,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
-    vendor/xiaomi/clover/proprietary/vendor/bin/ipacm-diag:$(TARGET_COPY_OUT_VENDOR)/bin/ipacm-diag \
     vendor/xiaomi/clover/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
     vendor/xiaomi/clover/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/xiaomi/clover/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
@@ -238,21 +163,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/xiaomi/clover/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/xiaomi/clover/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
-    vendor/xiaomi/clover/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/xiaomi/clover/proprietary/vendor/bin/qfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qfp-daemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/xiaomi/clover/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
-    vendor/xiaomi/clover/proprietary/vendor/bin/qvop-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/qvop-daemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/xiaomi/clover/proprietary/vendor/bin/sensors.qcom:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qcom \
     vendor/xiaomi/clover/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
-    vendor/xiaomi/clover/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
-    vendor/xiaomi/clover/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
     vendor/xiaomi/clover/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/xiaomi/clover/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/xiaomi/clover/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
-    vendor/xiaomi/clover/proprietary/vendor/bin/wcnss_filter:$(TARGET_COPY_OUT_VENDOR)/bin/wcnss_filter \
-    vendor/xiaomi/clover/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/xiaomi/clover/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/xiaomi/clover/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/xiaomi/clover/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
@@ -312,27 +231,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/xiaomi/clover/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/clover/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/drc/drc_cfg_5.1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/drc/drc_cfg_5.1.txt \
-    vendor/xiaomi/clover/proprietary/vendor/etc/drc/drc_cfg_AZ.txt:$(TARGET_COPY_OUT_VENDOR)/etc/drc/drc_cfg_AZ.txt \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg2.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_sdm630_800s_fhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm630_800s_fhd.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_sdm660_800h_qhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm660_800h_qhd.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_sdm660_800h_qhd_dsp30.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm660_800h_qhd_dsp30.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_sdm660_800s_qhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm660_800s_qhd.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_sdm660_800s_qhd_dsp30.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm660_800s_qhd_dsp30.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/hbtpcfg_sdm660_801s_qhd.dat:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/hbtpcfg_sdm660_801s_qhd.dat \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/qtc800h.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800h.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/qtc800h_dsp30.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800h_dsp30.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/qtc800s_dsp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800s_dsp.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/qtc800s_dsp30.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc800s_dsp30.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/hbtp/qtc801s.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/qtc801s.bin \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.widevine.rc \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
-    vendor/xiaomi/clover/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
     vendor/xiaomi/clover/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.gnss@1.0-service.rc \
@@ -345,20 +247,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/etc/permissions/com.fingerprints.extension.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.fingerprints.extension.xml \
     vendor/xiaomi/clover/proprietary/vendor/etc/qdcm_calib_data_NT51021_BOE_BOE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_NT51021_BOE_BOE.xml \
     vendor/xiaomi/clover/proprietary/vendor/etc/qdcm_calib_data_NT51021_BOE_BOE10.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_NT51021_BOE_BOE10.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvop/antispoofing.bin:$(TARGET_COPY_OUT_VENDOR)/etc/qvop/antispoofing.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvop/cmudict.bin:$(TARGET_COPY_OUT_VENDOR)/etc/qvop/cmudict.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvop/noisesample.bin:$(TARGET_COPY_OUT_VENDOR)/etc/qvop/noisesample.bin \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvop/poc_64_hmm.gmm:$(TARGET_COPY_OUT_VENDOR)/etc/qvop/poc_64_hmm.gmm \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvr/ov7251_640x480_cam_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/ov7251_640x480_cam_config.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvr/ov9282_stereo_1280x400_cam_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/ov9282_stereo_1280x400_cam_config.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvr/ov9282_stereo_2560x800_cam_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/ov9282_stereo_2560x800_cam_config.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvr/qvrservice_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_6dof_config.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvr/qvrservice_6dof_config_stereo.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_6dof_config_stereo.xml \
-    vendor/xiaomi/clover/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/xiaomi/clover/proprietary/vendor/etc/scve/facereco/gModel.dat:$(TARGET_COPY_OUT_VENDOR)/etc/scve/facereco/gModel.dat \
     vendor/xiaomi/clover/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
-    vendor/xiaomi/clover/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
-    vendor/xiaomi/clover/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/xiaomi/clover/proprietary/vendor/etc/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
     vendor/xiaomi/clover/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/clover/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
@@ -402,9 +292,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.api@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.quicinc.cne.constants@2.0.so \
@@ -448,9 +335,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libDRPlugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDRPlugin.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libFIDOKeyProvisioning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFIDOKeyProvisioning.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFaceGrade.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libFidoCrypto_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFidoCrypto_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
@@ -640,7 +525,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/libevent_observer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libevent_observer.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libfeedbackhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeedbackhandler.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflp.so \
@@ -652,11 +536,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofence.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libhal_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhal_dbg.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpclient.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpdsp.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpfrmwk.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
@@ -788,7 +667,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libmmlib2d_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmlib2d_interface.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libmmsw_detail_enhancement.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmsw_detail_enhancement.so \
@@ -832,7 +710,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libquipc_os_api.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libqvop-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqvop-service.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-hal-qmi.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
@@ -888,11 +765,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhaldsmanager.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
@@ -940,12 +812,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.data.latency@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.latency@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.iop@2.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.iop@2.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib/vendor.qti.hardware.limits@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.limits@1.0_vendor.so \
@@ -973,9 +839,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.api@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.quicinc.cne.constants@2.0.so \
@@ -1022,8 +885,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libDRPlugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDRPlugin.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libFIDOKeyProvisioning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFIDOKeyProvisioning.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libFidoCrypto_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFidoCrypto_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
@@ -1091,7 +952,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libevent_observer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libevent_observer.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvadsp_stub.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libfeedbackhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeedbackhandler.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
@@ -1101,11 +961,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofence.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpclient.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpdsp.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpfrmwk.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
@@ -1140,7 +995,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_faceproc2.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libmmsw_detail_enhancement.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmsw_detail_enhancement.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libmmsw_math.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmsw_math.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libmmsw_opencl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmsw_opencl.so \
@@ -1176,7 +1030,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libquipc_os_api.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libqvop-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvop-service.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
@@ -1230,11 +1083,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdcommonutils_proprietary.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libwfdhaldsmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhaldsmanager.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdmmservice.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdmodulehdcpsession.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
@@ -1256,12 +1104,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0-service.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.blobmanager@1.0_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0-service.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.0_vendor.so \
@@ -1280,7 +1122,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1_vendor.so \
-    vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.keystore@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.hardware.wipower@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wipower@1.0_vendor.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
     vendor/xiaomi/clover/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
@@ -1296,7 +1137,6 @@ PRODUCT_PACKAGES += \
     libloc_api_v02 \
     QtiSystemService \
     QtiTelephonyService \
-    WfdService \
     datastatusnotification \
     embms \
     ims \
@@ -1310,6 +1150,4 @@ PRODUCT_PACKAGES += \
     QFingerprintService \
     SVIService \
     TimeService \
-    colorservice \
-    com.qti.snapdragon.sdk.display \
     qcrilhook
